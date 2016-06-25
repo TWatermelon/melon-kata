@@ -9,7 +9,7 @@
 
 Note: [提交作者]和comment之间需要有 空格+minus+空格，comment内容不要出现minus。
 
-**Example: **`[M001][Shuiqiang&Waterstrong] - add the order domain object`
+**Example:** `[M001][Shuiqiang&Waterstrong] - add the order domain object`
 
 
 ### Java代码规范：
