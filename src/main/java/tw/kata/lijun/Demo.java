@@ -1,7 +1,7 @@
 package tw.kata.lijun;
 
 public class Demo {
-    public static void main(String args[]){
-        System.out.print("Hello World!!");
+    public String sayHelloWorld() {
+        return "Hello world";
     }
 }
