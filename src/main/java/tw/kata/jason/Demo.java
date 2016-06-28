@@ -1,8 +1,7 @@
 package tw.kata.jason;
 
-
-public class demo {
+public class Demo {
     public static void main(String[] args) {
-        System.out.println("demo accomplished.");
+        System.out.println("Demo accomplished.");
     }
 }
