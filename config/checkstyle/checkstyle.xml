@@ -52,7 +52,7 @@
 
         <module name="JavadocMethod">
             <property name="scope" value="protected"/>
-            <property name="severity" value="warning"/>
+            <property name="severity" value="error"/>
             <property name="allowMissingJavadoc" value="true"/>
             <property name="allowMissingParamTags" value="true"/>
             <property name="allowMissingReturnTag" value="true"/>
@@ -69,7 +69,7 @@
         -->
 
         <module name="JavadocStyle">
-            <property name="severity" value="warning"/>
+            <property name="severity" value="error"/>
         </module>
 
 
@@ -81,7 +81,7 @@
             <property name="applyToPublic" value="true"/>
             <property name="applyToProtected" value="true"/>
             <property name="applyToPackage" value="true"/>
-            <property name="applyToPrivate" value="false"/>
+            <property name="applyToPrivate" value="true"/>
             <property name="format" value="^([A-Z][A-Z0-9]*(_[A-Z0-9]+)*|FLAG_.*)$"/>
             <message key="name.invalidPattern"
                      value="Variable ''{0}'' should be in ALL_CAPS (if it is a constant) or be private (otherwise)."/>
@@ -125,20 +125,20 @@
         <module name="LocalFinalVariableName">
             <!-- Validates identifiers for local final variables against the
               expression "^[a-z][a-zA-Z0-9]*$". -->
-            <property name="severity" value="warning"/>
+            <property name="severity" value="error"/>
         </module>
 
         <module name="LocalVariableName">
             <!-- Validates identifiers for local variables against the
               expression "^[a-z][a-zA-Z0-9]*$". -->
-            <property name="severity" value="warning"/>
+            <property name="severity" value="error"/>
         </module>
 
         <module name="TypeNameCheck">
             <!-- Validates static, final fields against the
             expression "^[A-Z][a-zA-Z0-9]*$". -->
             <metadata name="altname" value="TypeName"/>
-            <property name="severity" value="warning"/>
+            <property name="severity" value="error"/>
         </module>
 
         <!-- Import check -->
@@ -178,7 +178,7 @@
             <property name="tokens" value="METHOD_DEF"/>
             <property name="max" value="20"/>
             <property name="countEmpty" value="false"/>
-            <property name="severity" value="warning" />
+            <property name="severity" value="error" />
         </module>
         <module name="ParameterNumber">
             <property name="max" value="5"/>
@@ -209,12 +209,12 @@
             </pre>
             -->
             <property name="option" value="same"/>
-            <property name="severity" value="warning"/>
+            <property name="severity" value="error"/>
         </module>
 
         <!-- Checks for braces around if and else blocks -->
         <module name="NeedBraces">
-            <property name="severity" value="warning"/>
+            <property name="severity" value="error"/>
             <property name="tokens" value="LITERAL_IF, LITERAL_ELSE, LITERAL_FOR, LITERAL_WHILE, LITERAL_DO"/>
         </module>
 
@@ -226,12 +226,12 @@
 
         <!-- Whites Space check -->
         <module name="EmptyForInitializerPad">
-            <property name="severity" value="warning"/>
+            <property name="severity" value="error"/>
         </module>
         <module name="NoWhitespaceAfter">
             <property name="tokens" value="BNOT, DEC, DOT, INC, LNOT,UNARY_MINUS, UNARY_PLUS"/>
             <property name="allowLineBreaks" value="false"/>
-            <property name="severity" value="warning"/>
+            <property name="severity" value="error"/>
         </module>
 
         <module name="FallThrough">
