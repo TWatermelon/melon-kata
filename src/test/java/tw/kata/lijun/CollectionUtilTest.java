@@ -20,17 +20,17 @@ public class CollectionUtilTest {
     }
 
     @Test
-    public void should_get_odd_numbers_given_number_list() {
+    public void shouldGetOddNumbersGivenNumberList() {
         assertThat(getOdds(numberList), is(asList(1, 3, 5, 7, 9)));
     }
 
     @Test
-    public void should_get_even_numbers_given_number_list() {
+    public void shouldGetEvenNumbersGivenNumberList() {
         assertThat(CollectionUtil.getEvens(numberList), is(asList(2, 4, 6, 8, 10)));
     }
 
     @Test
-    public void should_get_list_with_double_evens_given_number_list() {
+    public void shouldGetListWithDoubleEvensGivenNumberList() {
         assertThat(CollectionUtil.doubleEvens(numberList), is(asList(1, 4, 3, 8, 5, 12, 7, 16, 9, 20)));
     }
 }

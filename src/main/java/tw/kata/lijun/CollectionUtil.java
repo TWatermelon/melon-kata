@@ -14,12 +14,16 @@ public class CollectionUtil {
         return filterNumbers(numberList, number -> isEven(number));
     }
 
-    private static boolean isEven(Integer number) {
-        return number % 2 == 0;
+    public static List<Integer> doubleEvens(List<Integer> numberList) {
+        return numberList.stream().map(number -> doubleEven(number)).collect(toList());
     }
 
-    public static List<Integer> doubleEvens(List<Integer> numberList) {
-        return numberList.stream().map(number -> isEven(number) ? 2 * number : number).collect(toList());
+    private static int doubleEven(Integer number) {
+        return isEven(number) ? 2 * number : number;
+    }
+
+    private static boolean isEven(Integer number) {
+        return number % 2 == 0;
     }
 
     private static List<Integer> filterNumbers(List<Integer> numberList, Predicate<Integer> evenPredicate) {
