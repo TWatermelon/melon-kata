@@ -1,5 +1,9 @@
 # melon-kata | Let's fight
 
+### TDD Practice
+* [TDD Practice 1](docs/TDD1.md)
+* [TDD Practice 2](docs/TDD2.md)
+
 ### Project Board
 [TWatermelon Trello](https://trello.com/b/k5vWnDWD/melon-kata)
 
