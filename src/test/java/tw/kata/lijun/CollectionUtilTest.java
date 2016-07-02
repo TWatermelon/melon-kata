@@ -8,9 +8,7 @@ import static tw.kata.lijun.CollectionUtil.getOdds;
 import java.util.List;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
-
 public class CollectionUtilTest {
 
     private List<Integer> numberList;
@@ -25,7 +23,6 @@ public class CollectionUtilTest {
         assertThat(getOdds(numberList), is(asList(1, 3, 5, 7, 9)));
     }
 
-    @Ignore
     @Test
     public void should_get_even_numbers_given_number_list() {
         assertThat(CollectionUtil.getEvens(numberList), is(asList(2, 4, 6, 8, 10)));
