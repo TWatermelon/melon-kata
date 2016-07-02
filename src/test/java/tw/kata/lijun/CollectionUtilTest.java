@@ -1,15 +1,15 @@
 package tw.kata.lijun;
 
+import static java.util.Arrays.asList;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
+import static tw.kata.lijun.CollectionUtil.getOdds;
+
 import java.util.List;
 
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
-
-import static java.util.Arrays.asList;
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
-import static tw.kata.lijun.CollectionUtil.getOdds;
 
 public class CollectionUtilTest {
 
@@ -27,7 +27,7 @@ public class CollectionUtilTest {
 
     @Ignore
     @Test
-    public  void should_get_even_numbers_given_number_list() {
-        assertThat(CollectionUtil.getEvens(numberList), is(asList(2, 4, 6, 8,10)));
+    public void should_get_even_numbers_given_number_list() {
+        assertThat(CollectionUtil.getEvens(numberList), is(asList(2, 4, 6, 8, 10)));
     }
 }
