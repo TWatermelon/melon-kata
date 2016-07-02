@@ -33,4 +33,14 @@ public class CollectionUtilTest {
     public void shouldGetListWithDoubleEvensGivenNumberList() {
         assertThat(CollectionUtil.doubleEvens(numberList), is(asList(1, 4, 3, 8, 5, 12, 7, 16, 9, 20)));
     }
+
+    @Test
+    public void shouldReturnFoundIfNumberIsInTheNumberList() {
+        assertThat(CollectionUtil.findNumber(numberList, 5), is("Hello, 5"));
+    }
+
+    @Test
+    public void shouldReturnNotFoundIfNumberNotInTheNumberList() {
+        assertThat(CollectionUtil.findNumber(numberList, 11), is("Not Found"));
+    }
 }
