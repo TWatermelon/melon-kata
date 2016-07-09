@@ -7,6 +7,12 @@
 ### Project Board
 [TWatermelon Trello](https://trello.com/b/k5vWnDWD/melon-kata)
 
+### Jenkins
+[melon-kata-new](http://aws.waterstrong.me:8080/view/melon-kata-new/)
+
+### Travis CI
+[melon-kata builds](https://travis-ci.org/TWatermelon/melon-kata/builds)
+
 ### How to Start
 
 #### Generate IntelliJ IDEA project
